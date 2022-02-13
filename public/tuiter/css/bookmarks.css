@@ -1,0 +1,141 @@
+body {
+    background-color: black;
+    font-family: "Helvetica Neue", "Arial";
+}
+
+.wd-bookmarks-page {
+    padding-left: 16px;
+    border: 1px solid rgb(47, 51, 54);
+    border-bottom: 0px;
+}
+
+.wd-bookmarks-title-container {
+    padding: 12px 0px;
+    border-bottom: 1px solid rgb(47, 51, 54);
+    margin-left: -16px;
+}
+
+.wd-bookmarks-title {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    padding-left: 16px;
+}
+
+.wd-bookmarks-subtitle {
+    color: rgb(110, 118, 125);
+    font-size: 13px;
+    padding-left: 16px;
+}
+
+.wd-bookmarks {
+    display: flex;
+    flex-direction: column;
+}
+
+.wd-tuit-container {
+    padding: 12px 12px 12px 16px;
+    color: white;
+    display: flex;
+    border-bottom: 1px solid rgb(47, 51, 54);
+    margin-left: -16px;
+    flex-direction: row;
+}
+
+.wd-tuit {
+    display: flex;
+    flex-direction: column;
+}
+
+.wd-profile-pic {
+    width: 48px;
+    height: 48px;
+    border-radius: 50px;
+    float: left;
+}
+
+.wd-tuit-content {
+    margin-left: 12px;
+    font-size: 15px;
+}
+
+.wd-tuit-header {
+    display: inline-block;
+    display: flex;
+    flex-direction: row;
+}
+
+.wd-tuit-author {
+    color: white;
+    font-weight: bold;
+}
+
+.wd-tuit-handle {
+    color: rgb(110, 118, 125);
+    font-size: 15px;
+    margin-left: 4px;
+}
+
+.wd-tuit-text {
+    float: left;
+}
+
+.wd-tuit-link {
+    margin-top: 12px;
+    margin-left: 12px;
+    flex-direction: column;
+}
+
+.wd-tuit-link-image {
+    width: 504px;
+    height: 264px;
+    border: 1px solid rgb(47, 51, 54);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.wd-tuit-link-text {
+    margin-top: -4px;
+    width: 480px;
+    border: 1px solid rgb(47, 51, 54);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 12px;
+    flex-direction: column;
+}
+
+.wd-tuit-link-title {
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.wd-tuit-link-subtitle {
+    padding-top: 12px;
+    color: rgb(110, 118, 125);
+    font-size: 15px;
+}
+
+.wd-tuit-interactions {
+    margin-left: 12px;
+    width: 504px;
+    display: flex;
+    flex-direction: row;
+}
+
+.wd-tuit-interaction {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    padding: 12px;
+    flex-basis: 25%;
+    color: rgb(110, 118, 125);
+}
+
+.wd-tuit-interaction-count {
+    padding-left: 12px;
+}
+
+.red-fg {
+    color: red;
+}
