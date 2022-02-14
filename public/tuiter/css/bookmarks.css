@@ -7,13 +7,12 @@ body {
     padding-left: 16px;
     border: 1px solid rgb(47, 51, 54);
     border-bottom: 0px;
-    /*width: 584px;*/
 }
 
 .wd-bookmarks-title-container {
     padding: 12px 0px;
-    border-bottom: 1px solid rgb(47, 51, 54);
     margin-left: -16px;
+    border-bottom: 1px solid rgb(47, 51, 54);
 }
 
 .wd-bookmarks-title {
@@ -35,17 +34,12 @@ body {
 }
 
 .wd-tuit-container {
-    padding: 12px 12px 12px 16px;
     color: white;
     display: flex;
-    border-bottom: 1px solid rgb(47, 51, 54);
-    margin-left: -16px;
     flex-direction: row;
-}
-
-.wd-tuit {
-    display: flex;
-    flex-direction: column;
+    margin-left: -16px;
+    padding: 12px 12px 12px 16px;
+    border-bottom: 1px solid rgb(47, 51, 54);
 }
 
 .wd-profile-pic {
@@ -55,13 +49,17 @@ body {
     float: left;
 }
 
+.wd-tuit {
+    display: flex;
+    flex-direction: column;
+}
+
 .wd-tuit-content {
     margin-left: 12px;
     font-size: 15px;
 }
 
 .wd-tuit-header {
-    display: inline-block;
     display: flex;
     flex-direction: row;
 }
@@ -80,6 +78,7 @@ body {
 .wd-tuit-text {
     float: left;
     width: 506px;
+    margin-top: 5px;
 }
 
 .wd-tuit-link {
@@ -103,7 +102,6 @@ body {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     padding: 12px;
-    flex-direction: column;
 }
 
 .wd-tuit-link-title {
@@ -128,9 +126,9 @@ body {
 .wd-tuit-interaction {
     display: flex;
     flex-direction: row;
+    flex-grow: 1;
     text-decoration: none;
     padding: 12px;
-    flex-basis: 25%;
     color: rgb(110, 118, 125);
 }
 

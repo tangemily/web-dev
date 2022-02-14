@@ -14,19 +14,19 @@ body {
     color: white;
     background-color: rgb(47, 51, 54);
     border-radius: 25px;
-    box-shadow: none;
-    border: none;
-    width: 90%;
+    width: 80%;
     padding: 12px;
     font-size: 18px;
+    box-shadow: none;
+    border: none;
 }
 
 .wd-gear {
+    float: right;
     color: rgb(29,161,242);
     font-size: 30px;
-    float: right;
     margin-right: 12px;
-    margin-top: 6px;
+    margin-top: 7px;
 }
 
 .wd-explore-links {
@@ -41,8 +41,7 @@ body {
     font-weight: bold;
     text-decoration: none;
     padding: 16px 32px 16px 0px;
-    /*  Weird padding to make the explore links line up with the search bar
-        Left padding is 0 and right padding is doubled to compensate  */
+    /*  Weird padding to make the explore links line up with the search bar  */
 }
 
 .wd-selected-explore-link {
@@ -55,7 +54,7 @@ body {
 
 .wd-break {
     height: 13px;
-    background-color: #212327;
+    background-color: rgb(33, 35, 39);
     border-bottom: 1px solid rgb(47, 51, 54);
     border-top: 3px solid rgb(47, 51, 54);
     margin-left: -16px; /*  Override parent padding  */
@@ -74,19 +73,14 @@ body {
     border-bottom: 1px solid rgb(47, 51, 54);
 }
 
-.wd-trending-topic {
-    font-size: 14px;
-    color: rgb(110, 118, 125);
-    padding-bottom: 5px;
-}
-
-.wd-trending-stats {
-    font-size: 14px;
+.wd-trending-topic, .wd-trending-stats {
+    font-size: 13px;
     color: rgb(110, 118, 125);
     padding-bottom: 5px;
 }
 
 .wd-trending-title {
+    font-size: 15px;
     color: white;
     font-weight: bold;
     padding-bottom: 5px;
@@ -96,28 +90,27 @@ body {
     float: left;
 }
 
+.wd-trending-info {
+    display: flex;
+    flex-direction: row;
+}
+
 .wd-trending-author {
-    font-size: 14px;
+    font-size: 13px;
     color: white;
     font-weight: bold;
     padding-bottom: 5px;
+}
+
+.wd-trending-date {
+    font-size: 13px;
+    color: rgb(110, 118, 125);
+    padding-left: 7px;
 }
 
 .wd-post-image {
     width: 100px;
     height: 100px;
     float: right;
-    margin-left: 16px;
     border-radius: 20px;
-}
-
-.wd-trending-date {
-    padding-left: 7px;
-    font-size: 14px;
-    color: rgb(110, 118, 125);
-}
-
-.wd-trending-info {
-    display: flex;
-    flex-direction: row;
 }
