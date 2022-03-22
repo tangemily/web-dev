@@ -1,5 +1,6 @@
 import PostSummaryList from "../PostSummaryList";
 import React from "react";
+import "./explore.css";
 
 const ExploreComponent = ({active = 'foryou'}) => {
     return (
