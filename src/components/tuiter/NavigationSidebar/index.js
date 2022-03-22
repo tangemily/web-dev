@@ -14,7 +14,7 @@ const NavigationSidebar = (
                    className={`list-group-item list-group-item-action ${active === 'home' ? 'active' : ''}`}>
                     <i className="fa-solid fa-house"></i>
                     <span className="d-sm-none d-md-none d-lg-none d-xl-inline-block"> Home</span></a>
-                <a href="#"
+                <a href="../explore.html"
                    className={`list-group-item list-group-item-action ${active === 'explore' ? 'active' : ''}`}>
                     <i className="fa-solid fa-hashtag"></i>
                     <span className="d-sm-none d-md-none d-lg-none d-xl-inline-block"> Explore</span></a>
@@ -38,7 +38,7 @@ const NavigationSidebar = (
                    className={`list-group-item list-group-item-action ${active === 'profile' ? 'active' : ''}`}>
                     <i className="fa-solid fa-user"></i>
                     <span className="d-sm-none d-md-none d-lg-none d-xl-inline-block"> Profile</span></a>
-                <a href="#"
+                <a href="../more.html"
                    className={`list-group-item list-group-item-action ${active === 'more' ? 'active' : ''}`}>
                     <i className="fa-solid fa-ellipsis"></i>
                     <span className="d-sm-none d-md-none d-lg-none d-xl-inline-block"> More</span></a>
