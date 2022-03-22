@@ -16,7 +16,7 @@ const PostSummaryItem = (
                 <div className="float-left text-wrap wd-explore-text">
                     <div className="text-muted">{post.topic}</div>
                     <b>{post.userName}</b>
-                    <span className="text-muted">- {post.time}</span><br/>
+                    <span className="text-muted"> - {post.time}</span><br/>
                     <b>{post.title}</b>
                 </div>
                 <img className="rounded float-right"
