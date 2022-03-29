@@ -1,6 +1,6 @@
 import PostSummaryList from "../PostSummaryList";
 import React from "react";
-import "./explore.css";
+import "../tuiter.css";
 
 const ExploreComponent = ({active = 'foryou'}) => {
     return (
