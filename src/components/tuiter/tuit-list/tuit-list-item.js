@@ -13,21 +13,20 @@ const TuitListItem = ({tuit}) => {
     return (
         <div>
             <div>
-                <li className="list-group-item align-items-center flex-row d-inline-flex justify-content-between">
+                <li className="list-group-item align-items-center flex-row d-inline-flex justify-content-between wd-tuit">
                     <div className="d-flex">
-                        <img className="rounded-circle me-2"
-                             src={tuit.avatar}
-                             width="48px"
-                             height="48px"/>
+                        <img className="rounded-circle me-2 wd-tuit-image"
+                             src={tuit.avatar}/>
                         <div className="text-wrap">
                             <span>
                                 <div className="fw-bold d-inline">{tuit.handle}</div>
                                 <div className="text-muted d-inline"> @{tuit.postedBy.username}</div>
-                                <i onClick={() => deleteTuit(tuit)}
-                                   className="fa-solid fa-xmark float-end"></i>
+
                             </span> <br/>
                             {tuit.tuit} <br/>
                         </div>
+                        <i onClick={() => deleteTuit(tuit)}
+                           className="fa-solid fa-xmark fa-pull-right"></i>
 
                         {/*<div>*/}
                         {/*    {tuit.attachments ?*/}
