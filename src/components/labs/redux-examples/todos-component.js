@@ -46,11 +46,7 @@ const Todos = () => {
                         onChange={todoChangeHandler}
                         value={todo.do}
                         className="form-control"/>
-                    <button onClick={() =>
-                        deleteTodoClickHandler(todo)}
-                            className="btn btn-danger float-end">
-                        Delete
-                    </button>
+
                     <button onClick={createTodoClickHandler}
                             className="btn btn-primary">
                         Create New Todo
@@ -68,6 +64,11 @@ const Todos = () => {
                                            })}
                                    type="checkbox"/>
                             {todo.do}
+                            <button onClick={() =>
+                                deleteTodoClickHandler(todo)}
+                                    className="btn btn-danger float-end">
+                                Delete
+                            </button>
                         </li>
                     )
                 }
