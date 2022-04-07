@@ -24,7 +24,7 @@ const WhatsHappening = () => {
                                   style={{width: "100%", color: "white",
                                       padding: "0px",
                                       paddingTop: "15px",
-                                      backgroundColor: "black"}}
+                                      backgroundColor: "transparent"}}
                                   onChange={(e) =>
                                       setNewTuit({...newTuit,
                                           tuit: e.target.value})}></textarea>
