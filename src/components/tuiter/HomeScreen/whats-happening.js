@@ -2,15 +2,14 @@
 
 import React, {useState} from "react";
 import {useDispatch} from "react-redux";
+import {createTuit} from "../../../actions/tuits-actions";
 
 const WhatsHappening = () => {
     let [whatsHappening, setWhatsHappening] = useState('');
     const dispatch = useDispatch();
-    const tuitClickHandler = () => {
-        dispatch({type: 'create-tuit',
-            tuit: whatsHappening
-        });
-    }
+    const [newTuit, setNewTuit] =
+        useState({tuit: 'New tuit'});
+
     return(
         <>
             <table style={{marginBottom: '16px'}}>
@@ -21,14 +20,15 @@ const WhatsHappening = () => {
                              style={{width: '48px', margin: '16px'}}/>
                     </td>
                     <td style={{width: "100%"}}>
-                        <textarea value={whatsHappening}
-                                  onChange={(event) => setWhatsHappening(event.target.value)}
-                                  className="form-control"
+                        <textarea className="form-control"
                                   style={{width: "100%", color: "white",
                                       padding: "0px",
                                       paddingTop: "15px",
                                       backgroundColor: "black"}}
-                                  placeholder="What's happening?"></textarea>
+                                  onChange={(e) =>
+                                      setNewTuit({...newTuit,
+                                          tuit: e.target.value})}></textarea>
+
                         <hr/>
                         <span>
                             <a href="#"><i className="far fa-image me-3"></i></a>
@@ -36,7 +36,9 @@ const WhatsHappening = () => {
                             <a href="#"><i className="far fa-smile me-3"></i></a>
                             <a href="#"><i className="far fa-calendar me-3"></i></a>
                         </span>
-                        <button onClick={tuitClickHandler} className="btn btn-primary fa-pull-right rounded-pill">
+                        <button onClick={() =>
+                            createTuit(dispatch, newTuit)}
+                                className="btn btn-primary float-end">
                             Tuit
                         </button>
                     </td>
