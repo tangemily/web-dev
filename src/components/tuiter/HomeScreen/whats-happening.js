@@ -38,7 +38,7 @@ const WhatsHappening = () => {
                         </span>
                         <button onClick={() =>
                             createTuit(dispatch, newTuit)}
-                                className="btn btn-primary float-end">
+                                className="btn btn-primary rounded-pill float-end">
                             Tuit
                         </button>
                     </td>
