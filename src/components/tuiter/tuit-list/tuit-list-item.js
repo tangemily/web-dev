@@ -4,12 +4,11 @@ import React from "react";
 import {useDispatch} from "react-redux";
 import TuitStats from "./tuit-stats";
 import "../tuiter.css";
+import {deleteTuit} from "../../../actions/tuits-actions";
 
 const TuitListItem = ({tuit}) => {
     const dispatch = useDispatch();
-    const deleteTuitClickHandler = () => {
-        dispatch({type: 'delete-tuit', tuit})
-    }
+
     return (
         <li className="list-group-item">
             <table>
@@ -20,11 +19,13 @@ const TuitListItem = ({tuit}) => {
                     </td>
                     <td className="ps-3"
                         style={{width: '100%'}}>
-                        <i onClick={deleteTuitClickHandler}
-                           className="fa fa-remove fa-pull-right"></i>
+                        <i className="fas fa-remove float-end"
+                           onClick={() => deleteTuit(
+                               dispatch, tuit)}></i>
                         <span className="fw-bold">{tuit.postedBy.username}</span>
                         {tuit.verified && <i className="ms-1 fas fa-badge-check"></i>}
                         <span className="ms-1 text-secondary">@{tuit.handle}</span>
+
                         <div>
                             {tuit.tuit}
                         </div>
@@ -53,39 +54,5 @@ const TuitListItem = ({tuit}) => {
         </li>
     );
 };
-/*
-const TuitListItem = ({tuit}) => {
-    const dispatch = useDispatch();
-
-    const deleteTuit = (tuit) => {
-        dispatch({type: 'delete-tuit', tuit})
-    };
-
-    return (
-        <div>
-            <div>
-                <li className="list-group-item align-items-center flex-row d-inline-flex justify-content-between wd-tuit">
-                    <div className="d-flex">
-                        <img className="rounded-circle me-2 wd-tuit-image"
-                             src={tuit.avatar}/>
-                        <div className="text-wrap">
-                            <span>
-                                <div className="fw-bold d-inline">{tuit.handle}</div>
-                                <div className="text-muted d-inline"> @{tuit.postedBy.username}</div>
-
-                            </span> <br/>
-                            {tuit.tuit} <br/>
-                        </div>
-                        <i onClick={() => deleteTuit(tuit)}
-                           className="fa-solid fa-xmark fa-pull-right"></i>
-
-
-                    </div>
-                </li>
-            </div>
-        </div>
-    );
-};
-*/
 
 export default TuitListItem;
