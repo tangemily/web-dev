@@ -3,6 +3,7 @@
 import React from "react";
 import {useDispatch} from "react-redux";
 import {updateTuit} from "../../../actions/tuits-actions";
+import '../tuiter.css'
 
 const TuitStats = ({tuit}) => {
     const dispatch = useDispatch();
@@ -22,14 +23,14 @@ const TuitStats = ({tuit}) => {
                 <i onClick={() => updateTuit(dispatch, {
                     ...tuit,
                     likes: tuit.likes + 1
-                })} className="far fa-thumbs-up ms-2"></i>
+                })} className="far fa-thumbs-up ms-2 row"></i>
             </div>
-            <div>
+            <div className="col">
                 Dislikes: {tuit.dislikes}
                 <i onClick={() => updateTuit(dispatch, {
                     ...tuit,
                     dislikes: tuit.dislikes + 1
-                })} className="far fa-thumbs-down ms-2"></i>
+                })} className="far fa-thumbs-down ms-2 row"></i>
             </div>
             <div className="col">
                 <i className="fas fa-external-link-alt me-2"></i>

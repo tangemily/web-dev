@@ -4,7 +4,6 @@
 
 .wd-avatar-image {
     width: 48px;
-    height: 48px;
 }
 
 .wd-tuit {
@@ -13,4 +12,9 @@
 
 .wd-border-radius-20px {
     border-radius: 20px;
+}
+
+.wd-tuit-stats {
+    /*display: flex;*/
+    /*flex-direction: row;*/
 }
