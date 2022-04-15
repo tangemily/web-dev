@@ -19,18 +19,20 @@ const TuitStats = ({tuit}) => {
                 {tuit.stats?.retuits}
             </div>
             <div className="col">
-                Likes: {tuit.likes}
+                {tuit.likes}
                 <i onClick={() => updateTuit(dispatch, {
                     ...tuit,
-                    likes: tuit.likes + 1
-                })} className="far fa-thumbs-up ms-2 row"></i>
+                    likes: tuit.liked ? tuit.likes - 1 : tuit.likes + 1,
+                    liked: tuit.liked ? false : true,
+                })} className={`fa-thumbs-up ms-2 row ${tuit.liked ? "fa-solid" : "fa-regular"}`}></i>
             </div>
             <div className="col">
-                Dislikes: {tuit.dislikes}
+                {tuit.dislikes}
                 <i onClick={() => updateTuit(dispatch, {
                     ...tuit,
-                    dislikes: tuit.dislikes + 1
-                })} className="far fa-thumbs-down ms-2 row"></i>
+                    dislikes: tuit.disliked ? tuit.dislikes - 1 : tuit.dislikes + 1,
+                    disliked: tuit.disliked? false : true,
+                })} className={`fa-thumbs-down ms-2 row ${tuit.disliked ? "fa-solid" : "fa-regular"}`}></i>
             </div>
             <div className="col">
                 <i className="fas fa-external-link-alt me-2"></i>
