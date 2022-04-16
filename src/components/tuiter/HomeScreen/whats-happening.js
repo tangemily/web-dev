@@ -8,7 +8,7 @@ const WhatsHappening = () => {
     let [whatsHappening, setWhatsHappening] = useState('');
     const dispatch = useDispatch();
     const [newTuit, setNewTuit] =
-        useState({tuit: 'New tuit'});
+        useState({tuit: 'New tuit', likes: 0, dislikes: 0, handle: "Emily", postedBy: {username: "Emily" }, logo: "https://pbs.twimg.com/media/ETfL-nIWkAI8x7l.jpg"});
 
     return(
         <>
