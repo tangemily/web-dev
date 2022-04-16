@@ -22,7 +22,7 @@ const TuitListItem = ({tuit}) => {
                         <i className="fas fa-remove float-end"
                            onClick={() => deleteTuit(
                                dispatch, tuit)}></i>
-                        <span className="fw-bold">{tuit.postedBy.username}</span>
+                        <span className="fw-bold">{tuit.username}</span>
                         {tuit.verified && <i className="ms-1 fas fa-badge-check"></i>}
                         <span className="ms-1 text-secondary">@{tuit.handle}</span>
 
